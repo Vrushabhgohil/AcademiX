@@ -1,0 +1,71 @@
+body {
+  overflow: hidden;
+}
+.request_part {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://img.freepik.com/premium-vector/word-education-typography-education-typography-text-word-art-vector-marketing-illustration_316493-365.jpg?w=360");
+}
+.student_part {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../static/images/student_login.jpg");
+  background-size: cover;
+}
+.login_part {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../static/images/tutor_login.jpg");
+}
+.student_signup_part {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://img.freepik.com/premium-vector/vector-doodle-illustration-stationery-work-school-dark-background-banner_647116-416.jpg");
+  background-size: cover;
+}
+.login_tutor_main_section {
+  text-align: center;
+  margin: 0 15%;
+}
+.form_section {
+  background: white;
+  padding: 5%;
+  margin: 5% 0;
+}
+.form_section input {
+  margin: 10px 0;
+}
+input[type="file"] {
+  display: none;
+}
+
+/* Style the custom button */
+label {
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  border-bottom: 1px solid black;
+  width: 50%;
+}
+
+.formate_form_section {
+  background: white;
+  padding: 3%;
+  margin: 2% 0;
+}
+@media (max-width: 400px) {
+  .formate_form_section {
+    padding: 4% 7%;
+  }
+  .login_tutor_main_section {
+    text-align: center;
+    margin: 20px 3%;
+  }
+  .form_section input,label{
+    width: 100% !important;
+  }
+  .form_section button{
+    width: 50% !important;
+    margin-bottom: 10px !important;
+  }
+  .form_section p{
+    margin-bottom: 0;
+  }
+}

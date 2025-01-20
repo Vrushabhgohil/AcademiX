@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{{url_for('static',filename='login.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='common.css')}}">
+     <link rel="icon" href="./Academix-logo/favicon.png" type="image/x-icon">
+<title>AcademiX</title>
+</head>
+<body class="request_part">
+    <div class="login_tutor_main_section ">
+        <div class="form_section rounded-2 formate_form_section">
+            <h2>Request To Join As Tutor</h2>
+            <p>Ready to guide the next generation? Sign up to become a tutor today.</p>
+            <form action="" class="mt-3">
+                <input type="file"  id="file-upload" name="resume" onchange="updateFileName()"><label for="file-upload">Upload Resume</label><br>
+                <div class="file-name mt-1 text-dark" id="file-name">No file selected</div>
+                <input type="text" name="" id="" placeholder="Enter Your Name" class="w-50 p-2 mt-4 rounded-2 border-1"><br>
+                <input type="email" name="" id="" placeholder="Enter Email Address" class="w-50 p-2 rounded-2 border-1"><br>
+                <input type="tel" name="" id="" placeholder="Enter Phone Number" class="w-50 p-2 rounded-2 border-1"><br>
+                <input type="number" name="" id="" placeholder="Enter Your Experience" class="w-50 p-2 rounded-2 border-1"><br>
+                <input type="number" name="" id="" placeholder="Enter 6 Digit Secret Code" class="w-50 p-2 rounded-2 border-1"><br>
+                <p>* Keep Secret Code Private To Authenticate Yourself</p>
+                <button type="submit" class="btn btn-dark p-2 w-25 mt-3 mb-1">Login</button><br>
+                <a href="javascript:history.back()" class="text-decoration-none">Go Back</a>
+
+            </form>
+        </div>
+    </div>
+    <script>
+        function updateFileName() {
+            var fileInput = document.getElementById('file-upload');
+            var fileName = fileInput.files.length > 0 ? fileInput.files[0].name : 'No file selected';
+            document.getElementById('file-name').textContent = fileName;
+        }
+    </script>
+</body>
+</html>

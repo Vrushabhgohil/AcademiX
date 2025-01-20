@@ -1,0 +1,414 @@
+/* Disable scrolling when modal is open */
+#signup-modal:target ~ body {
+  overflow: hidden;
+}
+
+/* Display Flex */
+.header_section,
+.menu,
+.partition_section,
+.center_section,
+.start_learning_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* margin top */
+.partition_section,
+.cards_section,
+.center_section,
+.application_ref_section,
+.start_learning_section {
+  margin: 11% 0;
+}
+
+/* box shadow */
+.center_section,
+.application_ref_section {
+  box-shadow: 0px 16px 32px 0px #f0f4f7;
+}
+
+/* border_radius */
+.center_section,
+.application_ref_section,
+.menu div,
+.start_learning_title_section button,
+.menu a {
+  border-radius: 8px;
+}
+.menu div {
+  margin: 0 10px;
+  text-align: center;
+  width: 105px;
+}
+
+.menu a {
+  text-decoration: none;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #fcfcfc;
+  border: 1px solid #3c4852;
+  color: #3c4852;
+  font-weight: 500;
+  min-width: 100px;
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  cursor: pointer;
+  width: 104px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.menu div:nth-child(2) a {
+  background-color: black;
+  color: white;
+}
+
+.logo img {
+  width: 15pc;
+}
+
+/* first partition */
+.part_one h2 {
+  font-size: 50px;
+  max-width: 100%;
+}
+.part_one p {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.part_two img,
+.center_section {
+  width: 100%;
+}
+
+/* center details */
+.center_section {
+  display: flex;
+  padding: 40px;
+  background-color: white;
+  margin-top: 6%;
+}
+.img_section {
+  width: 51%;
+}
+.img_section img {
+  width: 90%;
+  height: 358px;
+}
+
+.details_section h2,
+.details_section h5 {
+  line-height: 60px;
+}
+.detail {
+  margin: 15px 0;
+}
+.details_section h6 {
+  margin-bottom: 45px;
+}
+.details_section h5 {
+  margin: 0px 4px 0px 0px;
+  color: rgb(45, 129, 247);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+}
+.details_section img {
+  width: 20px;
+  height: 20px;
+}
+
+/* cards section */
+.cards_section {
+  gap: 0 6%;
+}
+.cards h6 {
+  font-weight: 400;
+  margin-top: 20px;
+  line-height: 23px;
+}
+.cards img {
+  width: 100%;
+}
+
+/* application image  */
+.application_ref_section {
+  text-align: center;
+}
+.application_ref_section img {
+  width: 65%;
+}
+
+/* start learning  */
+.start_learning_title_section {
+  width: 64%;
+}
+.start_learning_title_section h2 {
+  max-width: 72%;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 4.2pc;
+}
+.start_learning_img_section img {
+  width: 100%;
+}
+
+.start_learning_title_section button {
+  width: 30%;
+  background-color: #08bd80;
+  color: white;
+  border: none;
+}
+
+/* footer */
+.footer_section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px 0;
+}
+.footer_section p {
+  width: 80%;
+}
+.footer_section div p {
+  font-weight: 400;
+}
+.reach_out_section h6 {
+  font-weight: bold;
+}
+
+.social_media i {
+  border: 1px solid black;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+/* Signup Model */
+.signup_model_section,
+.login_model_section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  padding: 10%;
+  width: 100%;
+  height: 100vh;
+  background: rgb(255, 255, 255);
+  overflow: hidden;
+}
+
+.close_btn {
+  font-size: 30px;
+  background: transparent;
+  float: right;
+  border: none;
+}
+
+.signup_with_roles,
+.login_with_roles {
+  margin: 14% 0;
+  text-align: center;
+  overflow-y: hidden;
+}
+
+.close_btn:hover,
+.close_btn:active {
+  background: transparent;
+  border: none;
+}
+
+@media (max-width: 400px) {
+  .details_section h2,
+  .details_section h5 {
+    line-height: 35px;
+  }
+  .part_one input,
+  .part_two img,
+  .img_section img,
+  .start_learning_title_section h2,
+  .start_learning_section img,
+  .application_ref_section img,.login_with_roles div,.signup_with_roles div {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .menu,.social_media div {
+    display: flex !important;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .part_one h2 {
+    font-size: 34px !important;
+  }
+  .start_learning_section img{
+    margin: 15% 0;
+  }
+  .img_section img {
+    height: auto;
+  }
+  .social_media{
+    width: 106%;
+  }
+  .social_media div{
+    flex-direction: row !important;
+    width: auto;
+  }
+  .login_with_roles,.signup_with_roles {
+    margin: 50% 0;
+  }
+  .login_with_roles div,.signup_with_roles div{
+    margin: 25px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .social_media {
+    flex-direction: row !important;
+  }
+  .start_learning_section,
+  .part_one,
+  .part_two,
+  .img_section {
+    text-align: center;
+  }
+  .start_learning_section {
+    display: block;
+  }
+  .container,
+  .container-sm {
+    max-width: 750px;
+  }
+  .row {
+    flex-direction: column;
+  }
+
+  .col-md-4 {
+    margin-bottom: 15px;
+  }
+
+  .part_one h2 {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .part_one p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .part_one button {
+    margin-bottom: 15% !important;
+  }
+  .part_two img,
+  .start_learning_section img {
+    width: 75%;
+  }
+  .img_section {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .details_section {
+    padding-top: 1pc;
+  }
+  .cards_section {
+    gap: 20px;
+  }
+
+  .cards {
+    text-align: center;
+    width: 100%;
+  }
+
+  .cards img {
+    width: 75%;
+    height: auto;
+  }
+
+  .footer_section {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer_section p {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .social_media i {
+    width: 35px;
+    height: 35px;
+  }
+
+  .start_learning_title_section {
+    width: 100%;
+  }
+
+  .start_learning_title_section h2 {
+    font-size: 30px;
+  }
+
+  .start_learning_title_section button {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header_section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu {
+    margin-top: 20px;
+    display: block;
+  }
+
+  .menu div {
+    margin: 10px 0;
+  }
+
+  .part_one h2 {
+    font-size: 40px;
+  }
+
+  .part_one p {
+    font-size: 18px;
+  }
+
+  .img_section {
+    width: 100%;
+  }
+
+  .center_section {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .cards_section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cards {
+    margin-bottom: 20px;
+  }
+
+  .start_learning_title_section h2 {
+    font-size: 36px;
+  }
+
+  .footer_section {
+    grid-template-columns: 1fr;
+  }
+
+  .footer_section div {
+    text-align: center;
+  }
+
+  .social_media {
+    justify-content: center;
+  }
+}
