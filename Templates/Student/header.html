@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{{url_for('static',filename='student/header.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='common.css')}}">
+    <link rel="icon" href="./Academix-logo/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="main_header_section container">
+        <div class="menu_section row">
+            <div class="logo col-6">
+                <img src="{{url_for('static',filename='Academix-logo/academix_colored_logo.png')}}" alt="" srcset="">
+            </div>
+            <div class="menu col-6">
+                <button class="btn btn-dark menu-btn"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </div>
+    {% block content %} {% endblock %}
+    <div class="main_footer_Section container">
+        <div class="footer_section pt-4">
+            <div class="info_section">
+                <div class="logo">
+                    <img src="{{url_for('static',filename='Academix-logo/academix_colored_logo.png')}}" alt=""
+                        srcset="">
+                </div>
+                <br>
+                <p>AcademiX is democratising education, making it accessible to all. Join the revolution, learn on
+                    India's largest learning platform.
+                </p>
+
+            </div>
+
+            <div class="reach_out_section">
+                <h6>Reach out to us</h6>
+                <p>Get your questions answered about learning with AcademiX.</p>
+
+                <h6 class="mt-3">Call
+                    +91 123456789</h6>
+
+            </div>
+            <div class="copy_right_section ">
+                <p>© 2025 Sorting Hat Technologies Pvt Ltd</p>
+
+            </div>
+            <div class="social_media row container">
+                <div class="col-1"><i class="fa-brands fa-facebook-f"></i></div>
+                <div class="col-1"><i class="fa-brands fa-instagram"></i></div>
+                <div class="col-1"><i class="fa-brands fa-twitter"></i></div>
+                <div class="col-1"><i class="fa-brands fa-linkedin-in"></i></div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="options">
+        <div class="mt-2 w-100 container" style="text-align: right;">
+            <button class="btn btn-dark close">Close</button>
+        </div>
+        <div class="mt-5">
+            <a href="http://" class="text-decoration-none h5 text-info">Home</a>
+            <div class="line bg-info"></div>
+        </div>
+        <div class="mt-2">
+            <a href="http://" class="text-decoration-none h5 text-warning">Course</a>
+            <div class="line bg-warning"></div>
+        </div>
+        <div class="mt-2">
+            <a href="http://" class="text-decoration-none h5 text-success">Profile</a>
+            <div class="line bg-success"></div>
+        </div>
+        <div class="mt-2">
+            <a href="http://" class="text-decoration-none h5 text-danger">Signout</a>
+            <div class="line bg-danger"></div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('.options').hide();
+            $('.menu_section button').click(function () {
+                $('.options').slideDown(500);
+                $("body").css("overflow-y", "hidden"); 
+            });
+            $('.close').click(function () {
+                $('.options').slideUp(500);
+                $("body").css("overflow-y", "scroll"); 
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -58,14 +58,15 @@ label {
     text-align: center;
     margin: 20px 3%;
   }
-  .form_section input,label{
+  .form_section input,
+  label {
     width: 100% !important;
   }
-  .form_section button{
+  .form_section button {
     width: 50% !important;
     margin-bottom: 10px !important;
   }
-  .form_section p{
+  .form_section p {
     margin-bottom: 0;
   }
 }
